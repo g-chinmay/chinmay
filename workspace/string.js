@@ -1,0 +1,21 @@
+var name1;
+var c;
+var pos,i;
+var word=new Array();
+name1=prompt("enter your name"," ");
+document.writeln("<b>name :"+name1);
+  document.writeln("<br>length : "+name1.length);
+  document.writeln("<br>lower case : "+name1.toLowerCase());
+  document.writeln("<br>upper case : "+name1.toUpperCase());
+  c=name1.charAt(4);
+  document.writeln("<br>charAt(4): "+c);
+  pos=name1.indexOf('a');
+  document.writeln("<br>indexOf(a) : "+pos);
+  pos=name1.lastIndexOf('a');
+  document.write("<br>lastIndexOf(a) : "+pos);
+  document.write("<br>split method for splitting into words");
+  word=name1.split(' ');
+  for(i=0;i<word.length;i++)
+  document.writeln("<br> "+word[i]);
+  document.writeln("<br> substr(3,4) : "+name1.substr(3,4));
+  document.write("<br> substring(3,4) : "+name1.substring(3,4));

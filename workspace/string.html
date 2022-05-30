@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>
+            string manipulation functions
+        </title>
+    </head>
+    <body>
+        <script language="javascript">
+          var name;
+          var c;
+          var pos,i;
+          var word=new Array();
+          name=prompt("enter your name"," ");
+          document.writeln("<b>name :"+name);
+            document.writeln("<br>length : "+name.length);
+            document.writeln("<br>lower case : "+name.toLowerCase());
+            document.writeln("<br>upper case : "+name.toUpperCase());
+            c=name.charAt(4);
+            document.writeln("<br>charAt(4): "+c);
+            pos=name.indexOf('a');
+            document.writeln("<br>indexOf(a) : "+pos);
+            pos=name.lastIndexOf('a');
+            document.write("<br>lastIndexOf(a) : "+pos);
+            document.write("<br>split method for splitting into words");
+            word=name.split(' ');
+            for(i=0;i<word.length;i++)
+            document.writeln("<br> "+word[i]);
+            document.writeln("<br> substr(3,4) : "+name.substr(3,4));
+            document.write("<br> substring(3,4) : "+name.substring(3,4));
+
+        </script>
+    </body>
+</html>
