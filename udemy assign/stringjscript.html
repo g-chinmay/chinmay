@@ -1,0 +1,26 @@
+<html>
+<head><title></title>string manipulation Functions</title> </head>
+<body> <script language="javascript">
+var name;var c;
+var pos, i; 
+var word=new Array();
+name=prompt ("Enter your name"," ");
+document.writeln("<b>Name :"+name);
+document.writeln("<br> Length: "+name.length);
+document.writeln("<br> Lower Case : "+name.toLowerCase());
+document.writeln("<br>Upper Case: "+name.toUpperCase());
+c=name.charAt(4);
+document.writeln("<br>charAt(4): "+c);
+pos= name.indexOf('a');
+document.writeln("<br>indexOf(a) : "+pos);
+pos=name.lastIndexOf('a');
+document.writeln("<br>lastIndexOf(a): "+pos);
+word=name.split(" ");
+fpr(i=0;i<word.length;i++)
+document.writeln("<br> "+word[i]);
+document.writeln("<br> substr(3,4) : " + name.substr(3,4));
+document.writeln("<br> substring(3,4) : "+name.substring(3,4));
+</script>
+
+</body> </html>
+
