@@ -5,16 +5,27 @@
         </title>
        
     </head>
-    <body>
+    <body><div id="color" onload="colors()"></div>
+        <style>
+            body{
+                background-color:lightcyan;
+                color:darkgreen;
+                font-size:1cm;
+            }
+        </style>
         <script language="javascript">
-            function colors(col){document.writeln("<h3>color is "+col);}
+            
+            function colors(col){
+                var color= "color is " + col;
+                document.getElementById("color").innerText= color;
+            }
 
         </script>
         <h4>
-            <input type="radio" onclick="colors('red')">Red <br>
-            <input type="radio" onclick="colors('blue')">Blue <br>
-            <input type="radio" onclick="colors('pink')">pink <br>
-            <input type="radio" onclick="colors('purple')">purple <br>
+            <input type="radio" onclick="colors('red')" >Red <br>
+            <input type="radio" onclick="colors('blue')" >Blue <br>
+            <input type="radio" onclick="colors('pink')" >pink <br>
+            <input type="radio" onclick="colors('purple')" >purple <br>
 
         </h4>
 
