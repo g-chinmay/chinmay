@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            temperature converter
+        </title>
+    </head>
+    <body>
+        
+        <h4>
+            <input type="radio" onclick="temp_converter('celsius',reading)"> Celsius <br>
+                <input type="radio" onclick="temp_converter('fahrenheit',reading)"> Fahrenheit <br>
+                </h4>
+        
+        <script language="javascript">
+            function temp_converter(from,reading) {
+           if (from === "celsius") {
+	       var F = (reading * 9/5) + 32;
+           document.writeln(F+ " degree F");
+           } else {
+    	  var C= (reading -32) * 5 / 9;
+          document.writeln(C + " degree celsius");
+            }
+         }
+     var reading = prompt("enter your temperature"," ");
+         
+     temp_converter(from,reading);
+
+        </script>
+        
+    </body>
+</html>

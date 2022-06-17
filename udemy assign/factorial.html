@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            factorial
+        </title>
+    </head>
+    <body>
+        <script language="javascript">
+            function factorial(n) {
+           var fact = 1;
+           for (var i=1; i <= n; i++) {
+	       fact = fact * i;
+            }
+          return fact;
+            }
+            var num=prompt("enter your number"," ");
+            var factorial = factorial(num);
+            document.writeln("factorial of given number is "+ factorial);
+        </script>
+    </body>
+</html>
