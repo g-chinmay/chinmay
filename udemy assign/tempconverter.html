@@ -6,6 +6,18 @@
     </head>
     <body>
         
+        <div id="target" onload="temp_converter()"></div>
+        <style>
+            body {
+            
+              background-color:bisque;
+              font-size:xx-large;
+              font-family: system-ui;
+              color: blueviolet;
+              text-align: center;
+            }
+            
+            </style>
         <h4>
             <input type="radio" onclick="temp_converter('celsius',reading)"> Celsius <br>
                 <input type="radio" onclick="temp_converter('fahrenheit',reading)"> Fahrenheit <br>
@@ -14,11 +26,13 @@
         <script language="javascript">
             function temp_converter(from,reading) {
            if (from === "celsius") {
-	       var F = (reading * 9/5) + 32;
-           document.writeln(F+ " degree F");
+	       var F = (reading * 9/5) + 32 + " degree F";
+           document.getElementById("target").innerText = F; 
+           
            } else {
-    	  var C= (reading -32) * 5 / 9;
-          document.writeln(C + " degree celsius");
+    	  var C= (reading -32) * 5 / 9 + " degree C";
+          document.getElementById("target").innerText = C;
+          
             }
          }
      var reading = prompt("enter your temperature"," ");
