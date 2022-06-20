@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>assignment-4</title>
+    </head>
+    <body>
+        <script>
+            
+            var a=parseInt(prompt("enter the height of rectangle"," "));
+            var b=parseInt(prompt("enter the width of rectangle"," "));
+          var rect= new Rectangle(a,b);
+          document.writeln(rect.area());
+          document.writeln(rect.perimeter());
+          function Rectangle(height,width){
+            this.h=height;
+            this.w=width;
+            this.area=function(){return this.w * this.h;};
+            this.perimeter=function(){return 2*(this.h+this.w);};
+          }
+  
+
+ 
+
+        </script>
+    </body>
+</html>

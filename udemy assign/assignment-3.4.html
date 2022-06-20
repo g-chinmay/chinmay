@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assign-3.4
+        </title>
+
+    </head>
+    <body>
+        <script>
+            var myNumbersArray = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(myNumbersArray.filter(function(num){
+  return !(num % 2); 
+console.log(myNumbersArray); 
+
+var myStringArray = ["This", "is", "an", "array", "with", "several", "strings", "making", "up", "a", "sentence."];
+console.log(myStringArray.filter(function(str){
+  return str.length < 3; 
+}));
+console.log(myStringArray);
+
+var myBoolArray = [true, false, 4, 0, "abc", "", "0"];
+console.log(myBoolArray.filter(Boolean));
+ 
+console.log(myBoolArray);
+        </script>
+    </body>
+</html>
