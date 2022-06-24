@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Distance between 2 points
+        </title>
+    </head>
+    <body>
+        <script language="javascript">
+            function Point(x,y){
+    this.x = x;
+    this.y = y;
+    this.distanceTo = function (another)
+    {
+        var distance = Math.sqrt((Math.pow(another.x-this.x,2))+(Math.pow(another.y-this.y,2)))
+        return distance;
+    };
+}
+
+var newPoint = new Point (10,100);
+var nextPoint= new Point (20,25);
+
+document.writeln(newPoint.distanceTo(nextPoint))
+        </script>
+    </body>
+</html>
